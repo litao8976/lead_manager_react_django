@@ -4,7 +4,7 @@
    PATH="$PATH:$PYTHON_BIN_PATH"
 
 4. pipenv shell
-
+5. pipenv install django djangorestframework django-rest-knox
 # Lead Manager
 
 > Full stack Django/React/Redux app that uses token based authentication with Knox.
