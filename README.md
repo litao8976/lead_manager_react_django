@@ -5,6 +5,8 @@
 
 4. pipenv shell
 5. pipenv install django djangorestframework django-rest-knox
+6. django-admin startproject leadmanager  
+7. python manage.py startapp leads
 # Lead Manager
 
 > Full stack Django/React/Redux app that uses token based authentication with Knox.
