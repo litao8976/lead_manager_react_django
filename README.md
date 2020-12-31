@@ -1,3 +1,10 @@
+1. python3 --version
+2. pip3 install pipenv
+3. PYTHON_BIN_PATH="$(python3 -m site --user-base)/bin"
+   PATH="$PATH:$PYTHON_BIN_PATH"
+
+4. pipenv shell
+
 # Lead Manager
 
 > Full stack Django/React/Redux app that uses token based authentication with Knox.
