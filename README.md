@@ -11,6 +11,7 @@
 9. python manage.py migrate
 
 # Install Postgres
+pip install psycopg2-binary
 pg_ctl -D /usr/local/var/postgres start
 
 psql postgres
