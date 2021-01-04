@@ -12,13 +12,21 @@
 
 # Install Postgres
 pg_ctl -D /usr/local/var/postgres start
+
 psql postgres
+
 create role app_user with login password 'app_password';
+
 alter role app_user createdb;
+
 \du
+
 \q
+
 psql postgres -U app_user
+
 create database app_database;
+
 \connect app_database;
 
 # Lead Manager
