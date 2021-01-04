@@ -9,6 +9,18 @@
 7. python manage.py startapp leads
 8. python manage.py makemigrations leads
 9. python manage.py migrate
+
+# Install Postgres
+pg_ctl -D /usr/local/var/postgres start
+psql postgres
+create role app_user with login password 'app_password';
+alter role app_user createdb;
+\du
+\q
+psql postgres -U app_user
+create database app_database;
+\connect app_database;
+
 # Lead Manager
 
 > Full stack Django/React/Redux app that uses token based authentication with Knox.
